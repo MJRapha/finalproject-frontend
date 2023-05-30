@@ -1,57 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+import { useContext } from "react";
+import Navabar from './components/main-navbar/Navabar';
+import { Route, Routes } from "react-router-dom";
 import './App.css';
+import './themed-bootstrap.scss'
+import AuthContext from './context/AuthContext';
+import About from './routes/AboutPage/About';
+import Home from './routes/HomePage/Home';
+import Login from './routes/LoginPage/Login';
+import Register from './routes/RegisterPage/Register';
+import MobilePhones from "./routes/MobilePhones/MobilePhones";
+import IPhonePage from "./components/IPhone-Page/IPhonePage";
+import AndroidPage from "./components/Android-Page/AndroidPage";
+import IPhoneDetails from "./components/IPhone-Page/IPhoneDetails";
+import AndroidDetails from "./components/Android-Page/AndroidDetails";
+import MCarouselDetails from "./components/multi-carousel/MCarouselDetails";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 
 function App() {
+  const { isLoggedIn } = useContext(AuthContext)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <>
+      <ShoppingCartProvider>
+        <Navabar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/phones" element={<MobilePhones />}>
+            <Route path="IPhone" element={<IPhonePage />} />
+            <Route path="Samsung" element={<AndroidPage />} />
+            <Route path="IPhone/:id" element={<IPhoneDetails />} />
+            <Route path="Samsung/:id" element={<AndroidDetails />} />
+            {/* <Route path="/:id" element={<MCarouselDetails />} /> */}
+          </Route>
+          <Route path="/phones/:id" element={<MCarouselDetails />} />
+          {!isLoggedIn && <Route path="/login" element={<Login />} />}
+          {!isLoggedIn && <Route path="/register" element={<Register />} />}
+        </Routes>
+      </ShoppingCartProvider>
+    </>
   );
 }
 

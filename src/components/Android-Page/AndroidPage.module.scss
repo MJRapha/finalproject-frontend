@@ -1,0 +1,77 @@
+.gridContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 15px;
+    padding: 10px;
+}
+
+.p {
+    font-size: x-large;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    height: 10.5vh;
+    padding: 5px;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.box {
+    width: 140px;
+    grid-column: 1/2;
+}
+
+.box2 {
+    width: 170px;
+    grid-column: 2/3;
+}
+
+.box3 {
+    width: 250px;
+    grid-column: 3/7;
+}
+
+.price {
+    font-size: x-large;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    height: 10.5vh;
+    padding: 10px;
+    margin: 10px;
+}
+
+.itemd {
+    font-size: x-large;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    width: 55%;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    height: 30vh;
+    margin: 10px;
+}
+
+.item4 {
+    width: 160px;
+    grid-column: 2/3;
+    grid-row: 1/5;
+}
+
+.item5 {
+    grid-column: 3/7;
+    grid-row: 1/5;
+    justify-content: space-evenly;
+}
+
+.item6 {
+    grid-row: 2/5;
+}

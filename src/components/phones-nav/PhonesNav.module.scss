@@ -1,0 +1,32 @@
+.navWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+
+    a {
+        text-decoration: none;
+        padding: 8px;
+        margin: 30px;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: 0.5s;
+    }
+}
+
+.navWrapper a:hover {
+    color: rgb(37, 121, 205);
+    text-decoration: underline;
+}
+
+.navWrapper a.active {
+    color: rgb(37, 121, 205);
+    text-decoration: underline;
+}
+
+.spacer {
+    flex-grow: 1;
+}
