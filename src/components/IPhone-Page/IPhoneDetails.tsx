@@ -36,7 +36,7 @@ const IPhoneDetails = () => {
                     <div className={css.box}>
                         <h4 className={css.p}>Capacity</h4>
                     </div>
-                    <div className={css.item7}>
+                    <div className={css.item}>
                         <p className={css.itemd}>{capacity}</p>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ const IPhoneDetails = () => {
                     <div className={css.box}>
                         <h4 className={css.p}>Size And Weight</h4>
                     </div>
-                    <div className={css.item7}>
+                    <div className={css.item}>
                         <p className={css.itemd}>{sizeAndWeight}</p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ const IPhoneDetails = () => {
                     <div className={css.box}>
                         <h4 className={css.p}>Splash Water & Dust Resistant</h4>
                     </div>
-                    <div className={css.item7}>
+                    <div className={css.item}>
                         <p className={css.itemd}>{splashWaterAndDustResistant}</p>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ const IPhoneDetails = () => {
                     <div className={css.box}>
                         <h4 className={css.p}>Chip</h4>
                     </div>
-                    <div className={css.item7}>
+                    <div className={css.item}>
                         <p className={css.itemd}>{chip}</p>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const IPhoneDetails = () => {
                     <div className={css.box}>
                         <h4 className={css.p}>Camera</h4>
                     </div>
-                    <div className={css.item7}>
+                    <div className={css.item}>
                         <p className={css.itemd}>{camera}</p>
                     </div>
                 </div>
@@ -89,7 +89,7 @@ const IPhoneDetails = () => {
                     <div className={css.box}>
                         <h4 className={css.p}>Video Recording</h4>
                     </div>
-                    <div className={css.item7}>
+                    <div className={css.item}>
                         <p className={css.itemd}>{videoRecording}</p>
                     </div>
                 </div>
@@ -108,7 +108,7 @@ const IPhoneDetails = () => {
                     <div className={css.box}>
                         <h4 className={css.p}>FaceID</h4>
                     </div>
-                    <div className={css.item7}>
+                    <div className={css.item}>
                         <p className={css.itemd}>{faceID}</p>
                     </div>
                 </div>
