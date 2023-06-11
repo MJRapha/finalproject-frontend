@@ -15,6 +15,7 @@ import IPhoneDetails from "./components/IPhone-Page/IPhoneDetails";
 import AndroidDetails from "./components/Android-Page/AndroidDetails";
 import MCarouselDetails from "./components/multi-carousel/MCarouselDetails";
 import { ShoppingCartProvider } from "./context/ShoppingCartContext";
+import PayButtonPage from "./routes/Pay-Button-Page/PayButtonPage";
 
 function App() {
   const { isLoggedIn } = useContext(AuthContext)
@@ -30,11 +31,11 @@ function App() {
             <Route path="Samsung" element={<AndroidPage />} />
             <Route path="IPhone/:id" element={<IPhoneDetails />} />
             <Route path="Samsung/:id" element={<AndroidDetails />} />
-            {/* <Route path="/:id" element={<MCarouselDetails />} /> */}
           </Route>
           <Route path="/phones/:id" element={<MCarouselDetails />} />
           {!isLoggedIn && <Route path="/login" element={<Login />} />}
           {!isLoggedIn && <Route path="/register" element={<Register />} />}
+          <Route path="/pay" element={<PayButtonPage />} />
         </Routes>
       </ShoppingCartProvider>
     </>

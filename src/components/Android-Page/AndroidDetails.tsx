@@ -36,7 +36,7 @@ const AndroidDetails = () => {
                     <div className={css.box}>
                         <h4 className={css.p}>Network</h4>
                     </div>
-                    <div className={css.item4}>
+                    <div className={css.item}>
                         <div className={css.box2}>
                             <p className={css.p}>Technology</p>
                         </div>
@@ -56,7 +56,7 @@ const AndroidDetails = () => {
                             <p className={css.p}>Speed</p>
                         </div>
                     </div>
-                    <div className={css.item5}>
+                    <div className={css.item2}>
                         <div className={css.box3}>
                             <p className={css.itemd}>{technology}</p>
                         </div>
@@ -91,7 +91,7 @@ const AndroidDetails = () => {
                             <p className={css.itemd}>{speed}</p>
                         </div>
                     </div>
-                    <div className={css.item6}></div>
+                    <div className={css.item3}></div>
                 </div>
                 <br />
                 <br />
@@ -108,7 +108,7 @@ const AndroidDetails = () => {
                     <div className={css.box}>
                         <h4 className={css.p}>Launch</h4>
                     </div>
-                    <div className={css.item4}>
+                    <div className={css.item}>
                         <div className={css.box2}>
                             <p className={css.p}>Announced</p>
                         </div>
@@ -116,7 +116,7 @@ const AndroidDetails = () => {
                             <p className={css.p}>Status</p>
                         </div>
                     </div>
-                    <div className={css.item5}>
+                    <div className={css.item2}>
                         <div className={css.box3}>
                             <p className={css.itemd}>{announced}</p>
                         </div>
@@ -127,14 +127,14 @@ const AndroidDetails = () => {
                             <p className={css.itemd}>{status}</p>
                         </div>
                     </div>
-                    <div className={css.item6}></div>
+                    <div className={css.item3}></div>
                 </div>
                 {/*  */}
                 <div className={css.container}>
                     <div className={css.box}>
                         <h4 className={css.p}>Body</h4>
                     </div>
-                    <div className={css.item4}>
+                    <div className={css.item}>
                         <div className={css.box2}>
                             <p className={css.p}>Dimensions</p>
                         </div>
@@ -148,7 +148,7 @@ const AndroidDetails = () => {
                             <p className={css.p}>SIM</p>
                         </div>
                     </div>
-                    <div className={css.item5}>
+                    <div className={css.item2}>
                         <div className={css.box3}>
                             <p className={css.itemd}>{dimensions}</p>
                         </div>
@@ -171,7 +171,7 @@ const AndroidDetails = () => {
                             <p className={css.itemd}>{SIM}</p>
                         </div>
                     </div>
-                    <div className={css.item6}></div>
+                    <div className={css.item3}></div>
                 </div>
                 <br />
                 <br />
@@ -182,7 +182,7 @@ const AndroidDetails = () => {
                     <div className={css.box}>
                         <h4 className={css.p}>Display</h4>
                     </div>
-                    <div className={css.item4}>
+                    <div className={css.item}>
                         <div className={css.box2}>
                             <p className={css.p}>Type</p>
                         </div>
@@ -196,7 +196,7 @@ const AndroidDetails = () => {
                             <p className={css.p}>Resolution</p>
                         </div>
                     </div>
-                    <div className={css.item5}>
+                    <div className={css.item2}>
                         <div className={css.box3}>
                             <p className={css.itemd}>{type}</p>
                         </div>
@@ -219,7 +219,7 @@ const AndroidDetails = () => {
                             <p className={css.itemd}>{resolution}</p>
                         </div>
                     </div>
-                    <div className={css.item6}></div>
+                    <div className={css.item3}></div>
                 </div>
                 <br />
                 <br />
@@ -229,7 +229,7 @@ const AndroidDetails = () => {
                     <div className={css.box}>
                         <h4 className={css.p}>Platform</h4>
                     </div>
-                    <div className={css.item4}>
+                    <div className={css.item}>
                         <div className={css.box2}>
                             <p className={css.p}>OS</p>
                         </div>
@@ -243,7 +243,7 @@ const AndroidDetails = () => {
                             <p className={css.p}>GPU</p>
                         </div>
                     </div>
-                    <div className={css.item5}>
+                    <div className={css.item2}>
                         <div className={css.box3}>
                             <p className={css.itemd}>{OS}</p>
                         </div>
@@ -266,7 +266,7 @@ const AndroidDetails = () => {
                             <p className={css.itemd}>{GPU}</p>
                         </div>
                     </div>
-                    <div className={css.item6}></div>
+                    <div className={css.item3}></div>
                 </div>
                 <br />
                 <br />
@@ -276,7 +276,7 @@ const AndroidDetails = () => {
                     <div className={css.box}>
                         <h4 className={css.p}>Memory</h4>
                     </div>
-                    <div className={css.item4}>
+                    <div className={css.item}>
                         <div className={css.box2}>
                             <p className={css.p}>CardSlot</p>
                         </div>
@@ -284,7 +284,7 @@ const AndroidDetails = () => {
                             <p className={css.p}>Internal</p>
                         </div>
                     </div>
-                    <div className={css.item5}>
+                    <div className={css.item2}>
                         <div className={css.box3}>
                             <p className={css.itemd}>{cardSlot}</p>
                         </div>
@@ -295,14 +295,14 @@ const AndroidDetails = () => {
                             <p className={css.itemd}>{internal}</p>
                         </div>
                     </div>
-                    <div className={css.item6}></div>
+                    <div className={css.item3}></div>
                 </div>
                 {/*  */}
                 <div className={css.container}>
                     <div className={css.box}>
                         <h4 className={css.p}>Sound</h4>
                     </div>
-                    <div className={css.item4}>
+                    <div className={css.item}>
                         <div className={css.box2}>
                             <p className={css.p}>Loudspeaker</p>
                         </div>
@@ -310,7 +310,7 @@ const AndroidDetails = () => {
                             <p className={css.p}>3.5mm Jack</p>
                         </div>
                     </div>
-                    <div className={css.item5}>
+                    <div className={css.item2}>
                         <div className={css.box3}>
                             <p className={css.itemd}>{loudspeaker}</p>
                         </div>
@@ -321,7 +321,7 @@ const AndroidDetails = () => {
                             <p className={css.itemd}>{threeAndHalfmmJack}</p>
                         </div>
                     </div>
-                    <div className={css.item6}></div>
+                    <div className={css.item3}></div>
                 </div>
                 <p className={css.price}>${price}</p>
                 <button

@@ -6,22 +6,25 @@ import { AndroidArr } from "../../api/AndroidArr";
 import { CarouselArr } from "../../api/OtherItemsArr";
 import CartItem from '../../components/card-item/CartItem';
 import css from "./CartPage.module.scss"
+import { useContext } from 'react';
+import AuthContext from "../../context/AuthContext";
+import { useNavigate } from 'react-router-dom';
 
 type ShoppingCartProps = {
     isOpen: boolean;
 }
 
-
 const CartPage = ({ isOpen }: ShoppingCartProps) => {
     const { closeCart, cartItems } = useShoppingCart()
+    const { isLoggedIn } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const shopItems =
         cartItems.map(item => {
-
-            console.log('item', item)
+            /* console.log('item', item) */
             return <CartItem key={item.id} {...item} />
         });
-
+    console.log(cartItems)
 
     return (
         //something from bootstrap, this is the slide effect of the basket
@@ -45,10 +48,20 @@ const CartPage = ({ isOpen }: ShoppingCartProps) => {
                             }, 0)
                             )}
                         </div>
-                        <Button className="ms-auto fw-bold fs-5 w-10 m-2">Buy</Button>
+                        <div>
+                            {isLoggedIn &&
+                                <Button className="ms-auto fw-bold fs-5 w-10 m-2" onClick={() => navigate("/login")}>
+                                    Login before
+                                </Button>
+                            }
+                            {!isLoggedIn &&
+                                <Button className="ms-auto fw-bold fs-5 w-10 m-2" onClick={() => navigate("/pay")}>
+                                    Buy
+                                </Button>
+                            }
+                        </div>
                     </div>
                 </Stack>
-
             </Offcanvas.Body>
         </Offcanvas>
     )

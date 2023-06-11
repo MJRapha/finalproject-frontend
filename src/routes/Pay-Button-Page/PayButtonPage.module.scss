@@ -1,0 +1,20 @@
+.title {
+    margin-top: 25px;
+    margin-bottom: 23px;
+    margin-left: 25px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5px;
+    gap: 3px
+}
+
+.firstPageSide {
+    padding: 50px;
+}
+
+.secondPageSide {
+    padding: 15px;
+}
