@@ -175,6 +175,9 @@ const MCarouselDetails = () => {
                             <br />
                             <div className={css.box3}>
                                 {multitouch ? <p className={css.itemd}>{multitouch}</p> : null}
+                                {multitouch ? <br /> : null}
+                                {multitouch ? <br /> : null}
+                                {multitouch ? <br /> : null}
                             </div>
                             <div className={css.box3}>
                                 {resolution ? <p className={css.itemd}>{resolution}</p> : null}

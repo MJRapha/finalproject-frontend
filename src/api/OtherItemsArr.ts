@@ -27,7 +27,7 @@ export const CarouselArr: CarouselArticle[] = [
             USB: "No",
         },
         features: {
-            sensors: "Dual beam-forming microphones, Dual optical sensors, Motion-detecting accelerometer, Speech-detecting accelerometer, Pressure sensor Automatically on, automatically connected, Easy setup for all your Apple devices, Double-tap to play or skip forward, Seamless switching between devices, Rich, high-quality audio and voice",
+            sensors: "Dual beam-forming microphones, Dual optical sensors, Motion-detecting accelerometer, Speech-detecting accelerometer, Pressure sensor Automatically on, automatically connected, Easy setup for all your Apple devices",
         },
         battery: "AirPods with Charging Case: More than 24 hours listening time, up to 18 hours talk time, AirPods (single charge): Up to 5 hours listening time, Up to 3 hours talk time, 15 minutes in the case equals 3 hours listening time or over 2 hours of talk time",
         company: "Carousel",
