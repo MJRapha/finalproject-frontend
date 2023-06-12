@@ -268,9 +268,7 @@ export const CarouselArr: CarouselArticle[] = [
         },
         features: {
             sensors: "Touch ID, Ambient Light sensor",
-            messaging: "No",
             browser: "Siri",
-            radio: "No",
             colors: "Various",
         },
         battery: "Non-removable Li-Po 49.9 Wh battery",
