@@ -49,12 +49,12 @@ const CartPage = ({ isOpen }: ShoppingCartProps) => {
                             )}
                         </div>
                         <div>
-                            {isLoggedIn &&
+                            {!isLoggedIn &&
                                 <Button className="ms-auto fw-bold fs-5 w-10 m-2" onClick={() => navigate("/login")}>
                                     Login before
                                 </Button>
                             }
-                            {!isLoggedIn &&
+                            {isLoggedIn &&
                                 <Button className="ms-auto fw-bold fs-5 w-10 m-2" onClick={() => navigate("/pay")}>
                                     Buy
                                 </Button>
